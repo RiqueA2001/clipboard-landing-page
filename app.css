@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  --cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/images/bg-header-mobile.png') no-repeat;
+  background-size: contain;
+  padding-bottom: 2rem;
+  padding-top: 8rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.logo {
+  margin-bottom: 4rem;
+}
+
+.hero-container h1 {
+  color: var(--dark-grayish-blue);
+  font-size: 1.8rem;
+}
+
+.hero-container p {
+  color: var(--grayish-blue);
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.253);
+}
+
+.btn-ios {
+  background-color: var(--cyan);
+}
+
+.btn-ios:hover {
+  background-color: rgb(4, 160, 160);
+}
+
+.btn-mac {
+  background-color: var(--light-blue);
+}
+
+.btn-mac:hover {
+  background-color: #7685fa;
+}
+
+@media (min-width: 740px) {
+  .hero {
+    background: url('/images/bg-header-desktop.png') no-repeat;
+    background-size: 100%;
+  }
+  .hero-container {
+    max-width: 800px;
+    text-align: center;
+  }
+  .logo {
+    margin-bottom: 2rem;
+  }
+  .hero-container h1 {
+    font-size: 2.7rem;
+  }
+  .hero-container p {
+    font-size: 1.25rem;
+  }
+  .hero-btns {
+    flex-direction: row;
+  }
+}
+
+/* TEXT SECTIONS */
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.text-section-container {
+  padding: 0 1rem;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  max-width: 800px;
+}
+
+.text-section-title {
+  color: var(--dark-grayish-blue);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text-section-text {
+  color: var(--grayish-blue);
+}
+
+@media (min-width: 900px) {
+  .text-section {
+    padding-top: 6rem;
+  }
+  .text-section-title {
+    font-size: 2.1rem;
+  }
+  .text-section-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* COMPUTER SECTION */
+
+.computer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.computer-container {
+  padding: 0 1rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.computer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.computer-content h2 {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.computer-content p {
+  color: var(--grayish-blue);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 1100px) {
+  .computer {
+    justify-content: start;
+  }
+  .computer-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .computer-img {
+    margin-left: -5rem;
+  }
+  .computer-content {
+    text-align: start;
+    margin-left: 3rem;
+    max-width: 450px;
+  }
+  .computer-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* DEVICES SECTION */
+
+.devices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARACTERISTICS SECTION */
+
+.caracteristics {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+}
+
+.caracteristics-img {
+  width: 45px;
+  height: 45px;
+}
+
+.caracteristics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.single-caracteristic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.caracteristics h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  color: var(--dark-grayish-blue);
+}
+
+.single-caracteristic p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--grayish-blue);
+}
+
+@media (min-width: 1000px) {
+  .caracteristics-container {
+    flex-direction: row;
+    max-width: 1100px;
+    gap: 1rem;
+    align-items: center;
+  }
+  .single-caracteristic {
+    height: 209.91px;
+  }
+  .single-caracteristic p {
+    font-size: 0.85rem;
+    max-width: 400px;
+  }
+}
+
+/* BRANDS SECTION */
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.brands-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.brand-img {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .brands-container {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 1rem;
+    max-width: 1000px;
+    gap: 4rem;
+  }
+}
+
+/* DOWNLOAD SECTION */
+
+.download {
+  background: none;
+  padding-bottom: 8rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f3f4f4;
+  padding: 3rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 70px;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.links-footer {
+  list-style-type: none;
+  display: grid;
+  gap: 2rem;
+  font-size: 1.1rem;
+  color: #7c868b;
+}
+
+.brands-footer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.brands-footer img {
+  width: 30px;
+}
+
+@media (min-width: 800px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .links-footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .link-footer {
+    text-align: left;
+  }
+  .link-footer:nth-of-type(2) {
+    order: 4;
+  }
+  .link-footer:nth-of-type(4) {
+    order: 5;
+  }
+}
